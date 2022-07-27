@@ -1,0 +1,82 @@
+unit Principal;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Edit, Conexao.MySQL, Interfacese,
+  Conexao.SQLServer, Classe.Pessoa, Classe.Fornecedor, Classe.Cliente;
+
+type
+  TForm3 = class(TForm)
+    Button2: TButton;
+    Edit1: TEdit;
+    Button1: TButton;
+    procedure Button2Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.fmx}
+
+
+procedure TForm3.Button1Click(Sender: TObject);
+begin
+  var
+    Cliente: TCliente;
+  begin
+    Cliente := TCliente.Create(TConexaoSQLServer.Create); // Conexão do banco
+    try
+      Cliente.Nome := 'Paulo';
+      Cliente.Telefone := '98165458';
+      Cliente.Endereco := 'Rua São Miguel';
+      Cliente.Cidade := 'Garanhuns';
+      Cliente.UF := 'PE';
+      Cliente.Saldo := 1000;
+      Cliente.DataNascimento := StrToDateTime(Edit1.Text);
+      Cliente.Cadastrar;
+      Cliente.CriarFinanceiro;
+
+      ShowMessage(IntToStr(Cliente.Idade));
+    finally
+      Cliente.Free;
+    end;
+  end;
+
+end;
+
+procedure TForm3.Button2Click(Sender: TObject);
+var
+  Fornecedor: TFornecedor;
+begin
+  Fornecedor := TFornecedor.Create(TConexaoSQLServer.Create);
+  // Conexão do banco
+  try
+    Fornecedor.Nome := 'Paulo';
+    Fornecedor.Telefone := '98165458';
+    Fornecedor.Endereco := 'Rua São Miguel';
+    Fornecedor.Cidade := 'Garanhuns';
+    Fornecedor.UF := 'PE';
+    Fornecedor.RazaoSocial := 'Kingdom Soft';
+    Fornecedor.DataNascimento := StrToDateTime(Edit1.Text);
+    Fornecedor.Cadastrar;
+    Fornecedor.CriarFinanceiro;
+
+    ShowMessage(IntToStr(Fornecedor.Idade));
+  finally
+    Fornecedor.Free;
+  end;
+end;
+
+end.

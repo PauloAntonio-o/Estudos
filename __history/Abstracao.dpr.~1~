@@ -1,0 +1,18 @@
+program Abstracao;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Unit3 in 'Unit3.pas' {Form3},
+  Cliente in 'Cliente.pas',
+  Conexao.SQLServer in 'Conexao.SQLServer.pas',
+  Interfaces in '..\GitHub\ESTUDO\Interfaces.pas',
+  Conexao.MySQL in 'Conexao.MySQL.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm3, Form3);
+  Application.Run;
+end.
