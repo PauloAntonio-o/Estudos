@@ -4,7 +4,7 @@ interface
 
 type
   TAnimal = class
-    function Voz: String; virtual; abstract;
+    function Voz : String; virtual; abstract;
   end;
 
   TCachorro = class(TAnimal)
@@ -22,7 +22,6 @@ type
   TTiranossauro = class sealed(TDinossauro)
     function Voz : String; override;
   end;
-
 
 
 implementation

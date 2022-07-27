@@ -211,6 +211,19 @@
         <DCCReference Include="Classe.Fornecedor.pas"/>
         <DCCReference Include="Classe.Cliente.pas"/>
         <DCCReference Include="Interfacese.pas"/>
+        <DCCReference Include="Classe.Animal.pas"/>
+        <DCCReference Include="Form.Padrao.pas">
+            <Form>FormPadrao</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="Form.Heranca1.pas">
+            <Form>FormPadrao1</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="Form.Heranca2.pas">
+            <Form>FormPadrao2</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

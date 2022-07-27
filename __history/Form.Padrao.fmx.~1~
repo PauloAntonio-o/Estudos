@@ -1,0 +1,85 @@
+object FomPadrao: TFomPadrao
+  Left = 0
+  Top = 0
+  Caption = 'Z'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      Size.Width = 640.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 25.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'T'#237'tulo'
+      TabOrder = 0
+    end
+  end
+  object Layout2: TLayout
+    Align = Bottom
+    Position.Y = 430.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Button1: TButton
+      Align = Right
+      Position.X = 480.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Deletar'
+    end
+    object Button2: TButton
+      Align = Right
+      Position.X = 560.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Cancelar'
+    end
+    object Button3: TButton
+      Align = Right
+      Position.X = 400.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Atualizar'
+    end
+    object Button4: TButton
+      Align = Right
+      Position.X = 320.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Inserir'
+    end
+  end
+  object Layout3D1: TLayout3D
+    Height = 4.000000000000000000
+    Width = 5.000000000000000000
+  end
+  object Z: TLayout
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 380.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+  end
+end

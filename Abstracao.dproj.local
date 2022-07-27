@@ -23,10 +23,47 @@
     <Transaction>2022/07/26 10:17:51.000.220,=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Classe.Fornecedor.pas</Transaction>
     <Transaction>2022/07/26 10:18:57.000.245,=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.pas</Transaction>
     <Transaction>2022/07/26 10:19:09.000.452,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.pas=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Classe.Cliente.pas</Transaction>
-    <Transaction>2022/07/26 11:33:46.041,=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.pas</Transaction>
-    <Transaction>2022/07/26 11:34:14.825,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Interfacese.pas=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.pas</Transaction>
+    <Transaction>2022/07/26 11:33:46.000.041,=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.pas</Transaction>
+    <Transaction>2022/07/26 11:34:14.000.825,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Interfacese.pas=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.pas</Transaction>
+    <Transaction>2022/07/27 09:06:23.000.588,=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.pas</Transaction>
+    <Transaction>2022/07/27 09:06:40.000.870,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.pas=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Classe.Animal.pas</Transaction>
+    <Transaction>2022/07/27 10:35:46.000.125,=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.pas</Transaction>
+    <Transaction>2022/07/27 10:49:46.000.541,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.fmx=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Padrao.fmx</Transaction>
+    <Transaction>2022/07/27 10:49:46.000.541,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.pas=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Padrao.pas</Transaction>
+    <Transaction>2022/07/27 10:51:25.000.565,=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.pas</Transaction>
+    <Transaction>2022/07/27 10:53:15.000.204,=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.pas</Transaction>
+    <Transaction>2022/07/27 10:54:17.000.141,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.fmx=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Herança.fmx</Transaction>
+    <Transaction>2022/07/27 10:54:17.000.141,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit1.pas=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Herança.pas</Transaction>
+    <Transaction>2022/07/27 10:54:24.000.406,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Herança.pas=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Heranca.pas</Transaction>
+    <Transaction>2022/07/27 10:54:24.000.406,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Herança.fmx=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Heranca.fmx</Transaction>
+    <Transaction>2022/07/27 10:54:39.000.100,=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit2.pas</Transaction>
+    <Transaction>2022/07/27 10:54:52.000.426,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit2.pas=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Heranca2.pas</Transaction>
+    <Transaction>2022/07/27 10:54:52.000.426,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Unit2.fmx=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Heranca2.fmx</Transaction>
+    <Transaction>2022/07/27 11:57:46.926,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Heranca1.pas=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Heranca.pas</Transaction>
+    <Transaction>2022/07/27 11:57:46.926,C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Heranca1.fmx=C:\Users\Paulo\Documents\Embarcadero\Studio\GitHub\ESTUDO\Form.Heranca.fmx</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile iOSSimulator="iPhone5"/>
 	</ActiveMobileDevice>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\GitHub"/>
+    <File Path="..\GitHub"/>
+    <File Path="..\GitHub\ESTUDO"/>
+    <File Path="..\GitHub\ESTUDO\Interfaces.pas"/>
+    <File Path="Classe.Cliente.pas"/>
+    <File Path="Classe.Fornecedor.pas"/>
+    <File Path="Classe.Pessoa.pas"/>
+    <File Path="Conexao.MySQL.pas"/>
+    <File Path="Conexao.SQLServer.pas"/>
+    <File Path="Interfacese.pas"/>
+    <File Path="Principal.pas"/>
+    <File Path="Principal.fmx"/>
+    <File Path="Classe.Animal.pas"/>
+    <File Path="Form.Padrao.pas"/>
+    <File Path="Form.Padrao.fmx"/>
+    <File Path="Form.Heranca1.pas"/>
+    <File Path="Form.Heranca1.fmx"/>
+    <File Path="Form.Heranca2.pas"/>
+    <File Path="Form.Heranca2.fmx"/>
+  </ProjectSortOrder>
 </BorlandProject>

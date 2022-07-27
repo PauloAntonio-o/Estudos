@@ -8,7 +8,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Edit, Conexao.MySQL, Interfacese,
   Conexao.SQLServer, Classe.Pessoa, Classe.Fornecedor, Classe.Cliente,
-  FMX.ListBox;
+  FMX.ListBox, Classe.Animal, Form.Padrao;
 
 type
   TForm3 = class(TForm)
@@ -19,12 +19,17 @@ type
     Button3: TButton;
     ComboBox2: TComboBox;
     Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
     procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
   private
     { Private declarations }
+
   public
     { Public declarations }
 
@@ -37,7 +42,7 @@ implementation
 
 {$R *.fmx}
 
-uses Classe.Animal;
+uses Form.Heranca, Form.Heranca2;
 
 procedure TForm3.Button1Click(Sender: TObject);
 begin
@@ -116,6 +121,16 @@ begin
   finally
     Animal.free;
   end;
+
+end;
+procedure TForm3.Button5Click(Sender: TObject);
+begin
+  FormPadrao.ShowModal;
+end;
+
+procedure TForm3.Button6Click(Sender: TObject);
+begin
+  FormPadrao1.ShowModal;
 end;
 
 end.

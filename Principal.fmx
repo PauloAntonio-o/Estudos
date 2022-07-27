@@ -21,10 +21,10 @@ object Form3: TForm3
   object Edit1: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 2
-    Position.X = 48.000000000000000000
+    Position.X = 56.000000000000000000
     Position.Y = 152.000000000000000000
-    Size.Width = 145.000000000000000000
-    Size.Height = 32.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 25.000000000000000000
     Size.PlatformDefault = False
   end
   object Button1: TButton
@@ -79,5 +79,19 @@ object Form3: TForm3
     TabOrder = 4
     Text = 'Voz Animal'
     OnClick = Button4Click
+  end
+  object Button5: TButton
+    Position.X = 80.000000000000000000
+    Position.Y = 256.000000000000000000
+    TabOrder = 9
+    Text = 'Heran'#231'a 1'
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Position.X = 80.000000000000000000
+    Position.Y = 282.000000000000000000
+    TabOrder = 8
+    Text = 'Heran'#231'a 2'
+    OnClick = Button6Click
   end
 end
