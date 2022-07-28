@@ -8,12 +8,12 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Edit, Conexao.MySQL, Interfacese,
   Conexao.SQLServer, Classe.Pessoa, Classe.Fornecedor, Classe.Cliente,
-  FMX.ListBox, Classe.Animal, Form.Padrao;
+  FMX.ListBox, Classe.Animal, Form.Padrao, FMX.Memo.Types, FMX.ScrollBox,
+  FMX.Memo, Form.Heranca1, Form.Heranca2;
 
 type
   TForm3 = class(TForm)
     Button2: TButton;
-    Edit1: TEdit;
     Button1: TButton;
     ComboBox1: TComboBox;
     Button3: TButton;
@@ -21,6 +21,8 @@ type
     Button4: TButton;
     Button5: TButton;
     Button6: TButton;
+    Memo1: TMemo;
+    Label1: TLabel;
     procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -29,6 +31,8 @@ type
     procedure Button6Click(Sender: TObject);
   private
     { Private declarations }
+    procedure ExibeMensagemMemo(value :String);
+    procedure ExibeMensagemLabel(Value : String);
 
   public
     { Public declarations }
@@ -42,8 +46,6 @@ implementation
 
 {$R *.fmx}
 
-uses Form.Heranca, Form.Heranca2;
-
 procedure TForm3.Button1Click(Sender: TObject);
 begin
   var
@@ -51,17 +53,17 @@ begin
   begin
     Cliente := TCliente.Create(TConexaoSQLServer.Create); // Conexão do banco
     try
+      Cliente.EventMemo := ExibeMensagemLabel;
+
       Cliente.Nome := 'Paulo';
       Cliente.Telefone := '98165458';
       Cliente.Endereco := 'Rua São Miguel';
       Cliente.Cidade := 'Garanhuns';
       Cliente.UF := 'PE';
       Cliente.Saldo := 1000;
-      Cliente.DataNascimento := StrToDateTime(Edit1.Text);
       Cliente.Cadastrar;
       Cliente.CriarFinanceiro;
 
-      ShowMessage(IntToStr(Cliente.Idade));
     finally
       Cliente.Free;
     end;
@@ -76,17 +78,17 @@ begin
   Fornecedor := TFornecedor.Create(TConexaoSQLServer.Create);
   // Conexão do banco
   try
+
+    Fornecedor.EventMemo := ExibeMensagemMemo;
+
     Fornecedor.Nome := 'Paulo';
     Fornecedor.Telefone := '98165458';
     Fornecedor.Endereco := 'Rua São Miguel';
     Fornecedor.Cidade := 'Garanhuns';
     Fornecedor.UF := 'PE';
     Fornecedor.RazaoSocial := 'Kingdom Soft';
-    Fornecedor.DataNascimento := StrToDateTime(Edit1.Text);
     Fornecedor.Cadastrar;
     Fornecedor.CriarFinanceiro;
-
-    ShowMessage(IntToStr(Fornecedor.Idade));
   finally
     Fornecedor.Free;
   end;
@@ -131,6 +133,16 @@ end;
 procedure TForm3.Button6Click(Sender: TObject);
 begin
   FormPadrao1.ShowModal;
+end;
+
+procedure TForm3.ExibeMensagemLabel(Value: String);
+begin
+  label1.Text:= Value;
+end;
+
+procedure TForm3.ExibeMensagemMemo(value: String);
+begin
+  Memo1.Lines.Add(Value);
 end;
 
 end.

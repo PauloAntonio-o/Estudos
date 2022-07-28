@@ -222,7 +222,6 @@
         </DCCReference>
         <DCCReference Include="Form.Heranca2.pas">
             <Form>FormPadrao2</Form>
-            <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

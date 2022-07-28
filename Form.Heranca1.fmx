@@ -1,5 +1,5 @@
 inherited FormPadrao1: TFormPadrao1
-  Caption = 'FormPadrao2'
+  Caption = 'FormPadrao1'
   StyleBook = nil
   DesignerMasterStyle = 0
   inherited Layout1: TLayout
